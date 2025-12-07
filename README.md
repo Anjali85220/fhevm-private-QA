@@ -1,27 +1,32 @@
-# 🧠 FHEVM Quiz
+# 🧠 FHE Private QA dApp
 
-A minimal **React-based decentralized application (dApp)** built with **Fully Homomorphic Encryption (FHE)** technology.  
-This project demonstrates how to build and interact with smart contracts deployed on the **FHEVM**, specifically the `FHEZamaQuiz.sol` contract.
+A privacy-preserving Q&A application built with Zama FHEVM, enabling users to submit responses encrypted end-to-end on-chain.
+All user inputs remain completely private thanks to Fully Homomorphic Encryption (FHE).
 
 ---
 
 ## 🚀 Overview
 
-This project showcases how to use **Zama’s FHEVM** to create a privacy-preserving quiz dApp.  
-Each user can submit **one encrypted answer**, which is stored securely on-chain in encrypted form (`euint32`).  
-Only the user and the contract can decrypt and view the actual answer.
+This dApp demonstrates how to build a **Next.js + React** interface that interacts with encrypted smart contracts using the **FHEVM SDK**.
+
+Users can:
+
+- Answer 4 multiple-choice questions.  
+- Encrypt answers client-side.  
+- Submit answers privately to a smart contract.  
+- Later decrypt results using their own wallet keys.
+
+The smart contract never sees plaintext answers — everything happens with encrypted **euint32** values.
 
 ---
 
-### ✨ Key Features
+## ✨ Key Features
 
-- 🔐 **Fully Homomorphic Encryption (FHE)** support — all answers are encrypted on-chain.
-- 🧩 **Zama FHEVM** integration via `@fhevm/solidity`.
-- ⚛️ **React + Vite** frontend template for rapid development.
-- 💬 Example contract interaction hooks (connect wallet, encrypt/decrypt, submit answer).
+### 🔐 Fully Homomorphic Encryption  
+User answers are encrypted both in storage and during computation.
 
----
-
+### ⚙️ FHEVM SDK integration (`@fhevm-sdk`)  
+Supports automatic encryption, private submissions, and client-side decryption.
 ## 📋 Prerequinextjss
 
 Before you begin, ensure you have:
@@ -38,7 +43,7 @@ Before you begin, ensure you have:
 ```bash
 # Clone the repository
 git clone <repository-url>
-cd fhevm-react-template
+cd fhevm-private-QA
 
 # Initialize submodules (includes fhevm-hardhat-template)
 git submodule update --init --recursive
@@ -131,7 +136,7 @@ For more details, see the [MetaMask development guide](https://docs.metamask.io/
 This template uses a monorepo structure with three main packages:
 
 ```
-fhevm-quiz/
+fhevm-private-QA/
 ├── packages/
 │   ├── fhevm-hardhat-template/    # Smart contracts & deployment
 │   ├── fhevm-sdk/                 # FHEVM SDK package
@@ -142,7 +147,7 @@ fhevm-quiz/
 ### Key Components
 
 #### 🔗 FHEVM Integration (`packages/nextjs/hooks`)
-- **`useFHEZamaQuiz.tsx`**: Example hook demonstrating FHEVM contract interaction
+- **`useFHEPrivateQA.tsx`**: Example hook demonstrating FHEVM contract interaction
 - Essential hooks for FHEVM-enabled smart contract communication
 - Easily copyable to any FHEVM + React project
 

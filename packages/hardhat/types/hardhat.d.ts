@@ -14,21 +14,17 @@ import * as Contracts from ".";
 declare module "hardhat/types/runtime" {
   interface HardhatEthersHelpers extends HardhatEthersHelpersBase {
     getContractFactory(
-      name: "EthereumConfig",
+      name: "ZamaConfig",
       signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.EthereumConfig__factory>;
+    ): Promise<Contracts.ZamaConfig__factory>;
     getContractFactory(
-      name: "SepoliaConfig",
+      name: "ZamaEthereumConfig",
       signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.SepoliaConfig__factory>;
+    ): Promise<Contracts.ZamaEthereumConfig__factory>;
     getContractFactory(
       name: "FHE",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.FHE__factory>;
-    getContractFactory(
-      name: "IDecryptionOracle",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.IDecryptionOracle__factory>;
     getContractFactory(
       name: "IKMSVerifier",
       signerOrOptions?: ethers.Signer | FactoryOptions
@@ -46,30 +42,25 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.IInputVerifier__factory>;
     getContractFactory(
-      name: "FHEZamaQuiz",
+      name: "FHEPrivateQA",
       signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.FHEZamaQuiz__factory>;
+    ): Promise<Contracts.FHEPrivateQA__factory>;
 
     getContractAt(
-      name: "EthereumConfig",
+      name: "ZamaConfig",
       address: string | ethers.Addressable,
       signer?: ethers.Signer
-    ): Promise<Contracts.EthereumConfig>;
+    ): Promise<Contracts.ZamaConfig>;
     getContractAt(
-      name: "SepoliaConfig",
+      name: "ZamaEthereumConfig",
       address: string | ethers.Addressable,
       signer?: ethers.Signer
-    ): Promise<Contracts.SepoliaConfig>;
+    ): Promise<Contracts.ZamaEthereumConfig>;
     getContractAt(
       name: "FHE",
       address: string | ethers.Addressable,
       signer?: ethers.Signer
     ): Promise<Contracts.FHE>;
-    getContractAt(
-      name: "IDecryptionOracle",
-      address: string | ethers.Addressable,
-      signer?: ethers.Signer
-    ): Promise<Contracts.IDecryptionOracle>;
     getContractAt(
       name: "IKMSVerifier",
       address: string | ethers.Addressable,
@@ -91,27 +82,23 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.IInputVerifier>;
     getContractAt(
-      name: "FHEZamaQuiz",
+      name: "FHEPrivateQA",
       address: string | ethers.Addressable,
       signer?: ethers.Signer
-    ): Promise<Contracts.FHEZamaQuiz>;
+    ): Promise<Contracts.FHEPrivateQA>;
 
     deployContract(
-      name: "EthereumConfig",
+      name: "ZamaConfig",
       signerOrOptions?: ethers.Signer | DeployContractOptions
-    ): Promise<Contracts.EthereumConfig>;
+    ): Promise<Contracts.ZamaConfig>;
     deployContract(
-      name: "SepoliaConfig",
+      name: "ZamaEthereumConfig",
       signerOrOptions?: ethers.Signer | DeployContractOptions
-    ): Promise<Contracts.SepoliaConfig>;
+    ): Promise<Contracts.ZamaEthereumConfig>;
     deployContract(
       name: "FHE",
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.FHE>;
-    deployContract(
-      name: "IDecryptionOracle",
-      signerOrOptions?: ethers.Signer | DeployContractOptions
-    ): Promise<Contracts.IDecryptionOracle>;
     deployContract(
       name: "IKMSVerifier",
       signerOrOptions?: ethers.Signer | DeployContractOptions
@@ -129,30 +116,25 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.IInputVerifier>;
     deployContract(
-      name: "FHEZamaQuiz",
+      name: "FHEPrivateQA",
       signerOrOptions?: ethers.Signer | DeployContractOptions
-    ): Promise<Contracts.FHEZamaQuiz>;
+    ): Promise<Contracts.FHEPrivateQA>;
 
     deployContract(
-      name: "EthereumConfig",
+      name: "ZamaConfig",
       args: any[],
       signerOrOptions?: ethers.Signer | DeployContractOptions
-    ): Promise<Contracts.EthereumConfig>;
+    ): Promise<Contracts.ZamaConfig>;
     deployContract(
-      name: "SepoliaConfig",
+      name: "ZamaEthereumConfig",
       args: any[],
       signerOrOptions?: ethers.Signer | DeployContractOptions
-    ): Promise<Contracts.SepoliaConfig>;
+    ): Promise<Contracts.ZamaEthereumConfig>;
     deployContract(
       name: "FHE",
       args: any[],
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.FHE>;
-    deployContract(
-      name: "IDecryptionOracle",
-      args: any[],
-      signerOrOptions?: ethers.Signer | DeployContractOptions
-    ): Promise<Contracts.IDecryptionOracle>;
     deployContract(
       name: "IKMSVerifier",
       args: any[],
@@ -174,10 +156,10 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.IInputVerifier>;
     deployContract(
-      name: "FHEZamaQuiz",
+      name: "FHEPrivateQA",
       args: any[],
       signerOrOptions?: ethers.Signer | DeployContractOptions
-    ): Promise<Contracts.FHEZamaQuiz>;
+    ): Promise<Contracts.FHEPrivateQA>;
 
     // default types
     getContractFactory(

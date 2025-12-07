@@ -5,7 +5,7 @@ import "~~/styles/globals.css";
 import { getMetadata } from "~~/utils/helper/getMetadata";
 
 export const metadata = getMetadata({
-  title: "FHEVM Quiz",
+  title: "FHEVM PrivateQA",
   description: "Built with FHEVM",
 });
 

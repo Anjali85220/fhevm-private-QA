@@ -1,10 +1,10 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/Users/nguyentuancanh/Documents/zama/zama-quiz/packages/hardhat/contracts/FHEZamaQuiz.sol": {
-      "lastModificationDate": 1761097076532,
-      "contentHash": "4db11e35d7f164fe402caf034456a80d",
-      "sourceName": "contracts/FHEZamaQuiz.sol",
+    "/Users/nguyentuancanh/Documents/zama/zama-private-QA/packages/hardhat/contracts/FHEPrivateQA.sol": {
+      "lastModificationDate": 1765029209218,
+      "contentHash": "169ec220b53f518e6f9dde534aaf3d37",
+      "sourceName": "contracts/FHEPrivateQA.sol",
       "solcConfig": {
         "version": "0.8.27",
         "settings": {
@@ -45,12 +45,12 @@
         "^0.8.24"
       ],
       "artifacts": [
-        "FHEZamaQuiz"
+        "FHEPrivateQA"
       ]
     },
-    "/Users/nguyentuancanh/Documents/zama/zama-quiz/packages/hardhat/fhevmTemp/@fhevm/solidity/config/ZamaConfig.sol": {
-      "lastModificationDate": 1761117870381,
-      "contentHash": "53afa19b446a7b49a624afc5d40ac227",
+    "/Users/nguyentuancanh/Documents/zama/zama-private-QA/packages/hardhat/fhevmTemp/@fhevm/solidity/config/ZamaConfig.sol": {
+      "lastModificationDate": 1765116541109,
+      "contentHash": "c85e28972111397253ff2be2b8b9287e",
       "sourceName": "@fhevm/solidity/config/ZamaConfig.sol",
       "solcConfig": {
         "version": "0.8.27",
@@ -85,7 +85,6 @@
         }
       },
       "imports": [
-        "@zama-fhe/oracle-solidity/address/ZamaOracleAddress.sol",
         "@fhevm/solidity/lib/FHE.sol",
         "@fhevm/solidity/lib/Impl.sol"
       ],
@@ -93,14 +92,13 @@
         "^0.8.24"
       ],
       "artifacts": [
-        "EthereumConfig",
-        "SepoliaConfig",
-        "ZamaConfig"
+        "ZamaConfig",
+        "ZamaEthereumConfig"
       ]
     },
-    "/Users/nguyentuancanh/Documents/zama/zama-quiz/node_modules/.pnpm/@fhevm+solidity@0.8.0/node_modules/@fhevm/solidity/lib/FHE.sol": {
-      "lastModificationDate": 1761092757062,
-      "contentHash": "4595eb92a31223262d4e29a27c938d97",
+    "/Users/nguyentuancanh/Documents/zama/zama-private-QA/node_modules/.pnpm/@fhevm+solidity@0.9.1/node_modules/@fhevm/solidity/lib/FHE.sol": {
+      "lastModificationDate": 1765028854478,
+      "contentHash": "a3654ad3694e201ea093182154462272",
       "sourceName": "@fhevm/solidity/lib/FHE.sol",
       "solcConfig": {
         "version": "0.8.27",
@@ -144,55 +142,12 @@
       ],
       "artifacts": [
         "FHE",
-        "IDecryptionOracle",
         "IKMSVerifier"
       ]
     },
-    "/Users/nguyentuancanh/Documents/zama/zama-quiz/packages/hardhat/fhevmTemp/@zama-fhe/oracle-solidity/address/ZamaOracleAddress.sol": {
-      "lastModificationDate": 1761092096778,
-      "contentHash": "7d4cce05c3d5e3799454d5a9fba75048",
-      "sourceName": "@zama-fhe/oracle-solidity/address/ZamaOracleAddress.sol",
-      "solcConfig": {
-        "version": "0.8.27",
-        "settings": {
-          "metadata": {
-            "bytecodeHash": "none",
-            "useLiteralContent": true
-          },
-          "optimizer": {
-            "enabled": true,
-            "runs": 800
-          },
-          "evmVersion": "cancun",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.24"
-      ],
-      "artifacts": []
-    },
-    "/Users/nguyentuancanh/Documents/zama/zama-quiz/node_modules/.pnpm/@fhevm+solidity@0.8.0/node_modules/@fhevm/solidity/lib/Impl.sol": {
-      "lastModificationDate": 1761092757062,
-      "contentHash": "82d95a375319ded89a84a9323575b351",
+    "/Users/nguyentuancanh/Documents/zama/zama-private-QA/node_modules/.pnpm/@fhevm+solidity@0.9.1/node_modules/@fhevm/solidity/lib/Impl.sol": {
+      "lastModificationDate": 1765028854478,
+      "contentHash": "6039bec93defbef7e3e2729c62b95194",
       "sourceName": "@fhevm/solidity/lib/Impl.sol",
       "solcConfig": {
         "version": "0.8.27",
@@ -239,8 +194,8 @@
         "Impl"
       ]
     },
-    "/Users/nguyentuancanh/Documents/zama/zama-quiz/node_modules/.pnpm/encrypted-types@0.0.4/node_modules/encrypted-types/EncryptedTypes.sol": {
-      "lastModificationDate": 1761092757063,
+    "/Users/nguyentuancanh/Documents/zama/zama-private-QA/node_modules/.pnpm/encrypted-types@0.0.4/node_modules/encrypted-types/EncryptedTypes.sol": {
+      "lastModificationDate": 1765028855696,
       "contentHash": "521a624fad71cd29fc4b7c443b41bb86",
       "sourceName": "encrypted-types/EncryptedTypes.sol",
       "solcConfig": {
@@ -281,8 +236,8 @@
       ],
       "artifacts": []
     },
-    "/Users/nguyentuancanh/Documents/zama/zama-quiz/node_modules/.pnpm/@fhevm+solidity@0.8.0/node_modules/@fhevm/solidity/lib/FheType.sol": {
-      "lastModificationDate": 1761092757062,
+    "/Users/nguyentuancanh/Documents/zama/zama-private-QA/node_modules/.pnpm/@fhevm+solidity@0.9.1/node_modules/@fhevm/solidity/lib/FheType.sol": {
+      "lastModificationDate": 1765028854478,
       "contentHash": "65f472a3e319ba73ac6b19a5e8660d15",
       "sourceName": "@fhevm/solidity/lib/FheType.sol",
       "solcConfig": {
